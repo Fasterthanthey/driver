@@ -1,0 +1,39 @@
+@media (min-width:280px) and (max-width:650px) {
+    .pstep {
+        display: grid;
+        grid-template-columns: 1fr;
+    
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    
+    img.uber {
+        height: 250px;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    img.uber:hover {
+        animation: myMovee 0.5s ease-out;
+    
+    }
+    
+    img.nine {
+        border-radius: 0 0 5px 5px;
+    
+    }
+    
+    img.nine:hover {
+        animation: myMovee 0.5s ease-in-out;
+    
+    }
+    
+    @keyframes myMovee {
+        from {
+            margin-right: 0px;
+        }
+        to {
+            margin-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver</title>
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="shortcut icon" href="./imagens/favicon-letra-n.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="container">
+        <div class="header">
+            <h1>Nicolas Igor Cardoso</h1>
+            <span id="burger" onclick="clicarMenu()" class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+
+        
+            <menu id="menu">
+                <nav id="lista">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="https://www.instagram.com/slowerthanthey/" target="_blank">INSTAGRAM</a></li>
+                        <li><a href="#">FACEBOOK</a></li>
+                        <li><a href="wa.link/y2kdsp" target="_blank">WHATSSAP</a></li>
+                        <li><a href="https://github.com/Fasterthanthey" target="_blank">GIT</a></li> 
+                        <li><a href="#">PAYME </a></li> 
+                        
+
+                    </ul>
+                </nav>
+            </menu>
+        
+    </header>
+
+    <main class="container">
+
+        <section id="aplicativos" onload="moverImagem()" class="pstep">
+
+            <a href="https://www.uber.com/br/pt-br/" target="black"><img class="uber" src="./imagens/bg.png" alt="" width="399"></a>
+
+            <a href="https://99app.com/" target="black"><img class="nine" src="./imagens/ninenine.png" alt="" width="399"></a>
+
+        </section>
+
+    </main>
+
+    <footer class="container">
+        <div class="footer">
+            <div>
+                <h1>FasterCompany</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="tel:+5511977333901">Tel: +1197733-3901</a></li>
+
+                    <li><a href="mailto:nicolas.igor@hotmail.com">nicolas.igor@hotmail.com</a></li>
+                </ul>
+            </div>
+            <p>Faster Todos os diretos reservados</p>
+        </div>
+    </footer>
+<!-- 
+    <form class="container form">
+        
+        <div >
+            <label class="label" for="nome">Nome</label>
+            <input class="input" type="text" id="nome" name="nome">
+        </div>
+        <div>
+            <label class="label" for="email">Email</label>
+            <input class="input" type="mail" id="mail" name="email">
+        </div>
+
+        <div class="col2">
+            <textarea name="mensagem" id="mensagem" cols="20" rows="10" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+         <input class="botao" type="submit" value="Enviar">
+    </form> -->
+
+
+    <script>
+        function clicarMenu() {
+            if (menu.style.display == "block") {
+                menu.style.display = "none"
+            } else {
+                menu.style.display = "block"
+            }
+        }
+
+    
+
+    </script>
+</body>
+
+</html>

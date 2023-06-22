@@ -1,0 +1,14 @@
+* {
+    margin : 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: poppins;
+    background-color: #000000;
+    width: 90vw;
+}
+
+ul {
+    list-style: none;
+}

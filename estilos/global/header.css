@@ -1,0 +1,94 @@
+@media (min-width:280px) and (max-width:650px) {
+header {
+    margin-top: 20px;
+    width: 350px;
+    
+}
+
+.header {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background-color:#8A9BA6;
+  
+    border-radius: 5px 5px 0 0 ;
+    padding: 10px;
+}
+
+.header h1 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    /* font-family: Bruno Ace ; */
+
+    color: #262626;
+}
+
+menu {
+    display:none;
+    margin-top: 10px;
+    animation: mymove 0.8s ease-in-out;
+}
+
+@keyframes mymove {
+    from {
+        margin-left: 100px;
+        /* top: 10px; */
+    }
+
+    to {
+        margin-right: 0px;
+        /* bottom: 10px; */
+    }
+}
+
+
+
+#lista ul {
+    list-style: none;
+    font-size: 0.9rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    padding: 1px;
+}
+
+#lista li > a {
+    text-decoration: none;
+
+    color: rgb(235, 235, 235);
+
+    padding: 1px 0px;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+
+}
+
+#lista li > a::after {
+    content: "";
+    display: block;
+    width:0px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    transition: 0.3s;
+}
+
+#lista li > a:hover::after {
+    width: 100%;
+}
+
+span#burger {
+    background-color: black;
+    color: rgb(133, 133, 133);
+
+    max-width: fit-content;
+
+    border-radius: 5px;
+    cursor: pointer; 
+}
+}

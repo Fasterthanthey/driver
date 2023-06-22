@@ -1,0 +1,54 @@
+@media (min-width:280px) and (max-width:850px) {
+    footer {
+        background-color: rgb(7, 7, 7);
+        border-radius: 5px;
+        position: relative;
+        max-width: 380px;
+    }
+
+    footer::before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 35px;
+        background-color: white;
+        position: absolute;
+        right: 210px;
+        top: 10px;
+    }
+    
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .footer h1 {
+        color: white;
+        font-size: 0.9rem;
+    }
+
+    .footer a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: white;
+    }
+
+    .footer p {
+        width: 100%;
+
+        margin-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        font-size: 0.8rem;
+        text-align: center;
+
+        grid-column: span 2;
+
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+    }
+}
